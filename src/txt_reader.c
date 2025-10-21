@@ -13,7 +13,7 @@ int read_words(){
 
   char line[word_size];
   
-  while((fgets(&line, word_size, file)) != EOF){
+  while((fgets(line, word_size, file)) != NULL){
     printf("%s\n", line);
   }
   return 0;
